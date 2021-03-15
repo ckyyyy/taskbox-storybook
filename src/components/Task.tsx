@@ -1,14 +1,9 @@
 import React, { FC } from 'react';
 
-type Task = {
-  id: string;
-  title: string;
-  state: string;
-  updatedAt?: Date;
-}
+import { TaskItem } from '../types/Task';
 
 type TaskProps = {
-  task: Task;
+  task: TaskItem;
   onArchiveTask: (id: string) => void;
   onPinTask: (id: string) => void;
 }
