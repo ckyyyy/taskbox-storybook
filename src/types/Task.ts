@@ -3,4 +3,4 @@ export type TaskItem = {
   title: string;
   state: string;
   updatedAt?: Date;
-}
+};
