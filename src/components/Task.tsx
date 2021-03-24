@@ -2,11 +2,11 @@ import React, { FC } from 'react';
 
 import { TaskItem } from '../types/Task';
 
-type TaskProps = {
+export interface TaskProps {
   task: TaskItem;
   onArchiveTask: (id: string) => void;
   onPinTask: (id: string) => void;
-};
+}
 
 const Task: FC<TaskProps> = ({
   task: { id, title, state },
