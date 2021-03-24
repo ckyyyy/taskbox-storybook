@@ -3,14 +3,14 @@ import React, { FC } from 'react';
 import Task from './Task';
 import { TaskItem } from '../types/Task';
 
-type TaskProps = {
+export interface TaskListProps {
   loading: boolean;
   tasks: TaskItem[];
   onArchiveTask: (id: string) => void;
   onPinTask: (id: string) => void;
-};
+}
 
-const TaskList: FC<TaskProps> = ({
+const TaskList: FC<TaskListProps> = ({
   loading,
   tasks,
   onArchiveTask,
