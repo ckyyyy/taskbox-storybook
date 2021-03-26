@@ -24,7 +24,7 @@ Pinned.args = {
     id: '1',
     title: 'Test Task',
     state: 'TASK_PINNED',
-    ...Default.args.task,
+    updatedAt: new Date(2018, 0, 1, 9, 0),
   },
 };
 
@@ -34,6 +34,6 @@ Archived.args = {
     id: '1',
     title: 'Test Task',
     state: 'TASK_ARCHIVED',
-    ...Default.args.task,
+    updatedAt: new Date(2018, 0, 1, 9, 0),
   },
 };
