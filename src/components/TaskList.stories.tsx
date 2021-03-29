@@ -90,10 +90,9 @@ WithPinnedTasks.args = {
     {
       ...TaskStories?.Default?.args?.task,
       id: '6',
-      title: 'Task 6',
-      state: 'TASK_INBOX',
+      title: 'Task 6 (pinned)',
+      state: 'TASK_PINNED',
     },
-    { id: '6', title: 'Task 6 (pinned)', state: 'TASK_PINNED' },
   ],
 };
 
