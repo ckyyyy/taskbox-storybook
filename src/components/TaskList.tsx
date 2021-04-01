@@ -7,14 +7,14 @@ import { connect } from 'react-redux';
 import { archiveTask, pinTask } from '../lib/redux';
 
 export interface TaskListProps {
-  loading: boolean;
+  loading?: boolean;
   tasks: TaskItem[];
   onArchiveTask: (id: string) => void;
   onPinTask: (id: string) => void;
 }
 
 export const PureTaskList: FC<TaskListProps> = ({
-  loading,
+  loading = false,
   tasks,
   onArchiveTask,
   onPinTask,
